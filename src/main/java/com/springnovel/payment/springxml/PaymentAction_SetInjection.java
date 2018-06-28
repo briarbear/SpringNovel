@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Required;
 
 import java.math.BigDecimal;
 
+/**
+ * 使用Set方式注入
+ */
 public class PaymentAction_SetInjection {
 
     private ILogger logger;
@@ -16,7 +19,8 @@ public class PaymentAction_SetInjection {
         this.logger = logger;
     }
 
-    @Required
+
+    @Required  //必选
     public void setOrderDao(IOrderDao orderDao) {
         this.orderDao = orderDao;
     }

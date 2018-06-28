@@ -6,6 +6,10 @@ import com.springnovel.perfectlogger.ILogger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 使用基于Java代码的注入方法
+ */
+
 @Configuration
 public class PaymentJavaConfig {
 

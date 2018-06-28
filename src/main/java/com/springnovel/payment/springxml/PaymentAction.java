@@ -39,6 +39,10 @@ public class PaymentAction implements BeanNameAware, ApplicationContextAware, In
         logger.log("pay end");
     }
 
+    /**
+     * 支付完更新订单信息
+     * @param orderId
+     */
     public void updateOrderAfterPayment(String orderId) {
         orderDao.updateOrderAfterPayment(orderId);
     }
